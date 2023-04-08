@@ -10,6 +10,7 @@ const Row1 = () => {
   // const { palette } = useTheme();
   const { data } = useGetKpisQuery();
   console.log("data:", data);
+  // console.log(import.meta.env.VITE_BASE_URL);
 
   const revenue = useMemo(() => {
     return (

@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
 
 //Routes Setup
-app.use("/kpis", kpiRoutes);
+app.use("/kpi", kpiRoutes);
 
 
 
