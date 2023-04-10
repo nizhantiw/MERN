@@ -52,7 +52,7 @@ const gridTemplateSmallScreens= `
 "j"
 `
 const Dashboard = () => {
-    const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
+    const isAboveMediumScreens = useMediaQuery("(min-width: 1600px)");
     // const {palette}= useTheme();
 
   return (
