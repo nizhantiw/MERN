@@ -28,8 +28,35 @@ export interface GetKpisResponse{
     __v:number;
     totalProfit:number;
     totalRevenue:number;
-    tptalExpanses:number;
+    totalExpenses:number;
     expensesByCategory:ExpensesByCategory;
     monthlyData: Array<Month>;
     dailyData: Array<Day>;
+    createdAt: string;
+    updatedAt: string;
+}
+
+export interface GetProductsResponse{
+    id: string;
+    _id: string;
+    __v:number;
+    price:number;
+    expense:number;
+    // transactions:number;
+    // expensesByCategory:ExpensesByCategory;
+    transactions: Array<string>;
+    createdAt: string;
+    updatedAt: string;
+}
+export interface GetTransactionsResponse{
+    id: string;
+    _id: string;
+    __v:number;
+    buyer:number;
+    amount:number;
+    // transactions:number;
+    // expensesByCategory:ExpensesByCategory;
+    productIds: Array<string>;
+    createdAt: string;
+    updatedAt: string;
 }

@@ -10,3 +10,16 @@ body,
   background-color: #1f2026;
   
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #242427;
+}
+::-webkit-scrollbar-thumb{
+  background: #606166;
+}
+::-webkit-scrollbar-track:hover{
+  background: #2f3032;
+}
