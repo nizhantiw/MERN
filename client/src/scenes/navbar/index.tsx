@@ -18,6 +18,9 @@ return(
             <Typography variant='h4' fontSize='16px'>
             Finance Dashboard
             </Typography>
+            <Typography variant='h5' fontSize='10px'>
+            Made with <span >&#9829;</span> by Nishant K. Tiwary
+            </Typography>
         </FlexBetween>
 
 
