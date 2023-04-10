@@ -16,7 +16,7 @@ import {
 } from "recharts";
 import regression, { DataPoint } from "regression";
 
-const Forecast = () => {
+const Pridictions = () => {
   const { palette } = useTheme();
   const [isPredictions, setIsPredictions] = useState(false);
   const { data: kpiData } = useGetKpisQuery();
@@ -26,8 +26,8 @@ const Forecast = () => {
     const monthData = kpiData[0].monthlyData;
 
     const formatted: Array<DataPoint> = monthData.map(
-      ({ revenue }, i: number) => {
-        return [i, revenue];
+      ( { revenue }, i: number) => {
+        return [ i, revenue];
       }
     );
     const regressionLine = regression.linear(formatted);
@@ -118,4 +118,4 @@ const Forecast = () => {
   );
 };
 
-export default Forecast;
+export default Pridictions;
